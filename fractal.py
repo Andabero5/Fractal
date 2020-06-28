@@ -24,7 +24,7 @@ def drawLogic(t, instructions, angle, distance):
             t.left(angle)
 
 
-def main(iterations, axiom, rules, angle, length=10, size=1, y_offset=0,
+def main(iterations, axiom, rules, angle, length=8, size=1, y_offset=0,
          x_offset=0, offset_angle=0, width=500, height=500):
 
     inst = logic(iterations, axiom, rules)
@@ -48,7 +48,7 @@ def main(iterations, axiom, rules, angle, length=10, size=1, y_offset=0,
 
 
 if __name__ == "__main__":
-    main(axiom="F-F-F-F",
-         rules={"F": "F-F+F+F-F"},
+    main(axiom="F--F--F",
+         rules={"F": "F+F--F+F"},
          iterations=2,
-         angle=90)
+         angle=60)
